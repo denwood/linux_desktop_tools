@@ -1,0 +1,11 @@
+---
+# tasks file for code-extensions
+- name: "[Installation VisualCode Extension]"
+  shell: code --install-extension "{{ item }}"
+  args:
+    executable: /bin/bash
+  with_items: "{{code_extensions}}"
+
+
+
+

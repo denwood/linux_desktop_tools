@@ -1,0 +1,24 @@
+---
+# vars file for code-extensions
+code_extensions:
+  - dbaeumer.vscode-eslint
+  - donjayamanne.githistory
+  - eamodio.gitlens
+  - eg2.tslint
+  - emilast.LogFileHighlighter
+  - karigari.chat
+  - Mikael.Angular-BeastCode
+  - ms-python.python
+  - ms-vsliveshare.vsliveshare
+  - ms-vsliveshare.vsliveshare-audio
+  - ms-vsliveshare.vsliveshare-pack
+  - msjsdiag.debugger-for-chrome
+  - p1c2u.docker-compose
+  - samuelcolvin.jinjahtml
+  - PeterJausovec.vscode-docker
+  - PKief.material-icon-theme
+  - redhat.vscode-yaml
+  - robertohuertasm.vscode-icons
+  - rogalmic.bash-debug
+  - shakram02.bash-beautify
+  - tht13.python
