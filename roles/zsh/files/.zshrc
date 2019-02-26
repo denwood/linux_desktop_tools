@@ -217,16 +217,21 @@ POWERLEVEL9K_CUSTOM_USER="user_with_skull"
 ENABLE_CORRECTION="true"
 
 # Command execution time stamp shown in the history command output.
+HIST_STAMPS="mm/dd/yyyy"
 
-HIST_STAMPS="dd/mm/yyyy"
 # Prompt elements
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_user dir vcs)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs battery)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs date ram)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs time ram)
 ###############################################
 #source ~/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
 
 alias lg='lazygit'
+alias cls='colorls'
 alias ls='colorls'
+alias cll='colorls -lA --sd'
